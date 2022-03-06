@@ -1,0 +1,1 @@
+No user interactions are currently implemented in the project.
