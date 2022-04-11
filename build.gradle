@@ -27,9 +27,10 @@ ext {
 }
 
 dependencies {
+    implementation "junit:junit:4.12"
+    implementation "net.serenity-bdd:serenity-cucumber:1.9.45"
     implementation "net.serenity-bdd:serenity-core:${SerenityCoreVersion}"
     implementation "net.serenity-bdd:serenity-junit:${SerenityCoreVersion}"
-    implementation "net.serenity-bdd:serenity-cucumber:1.9.45"
     implementation "net.serenity-bdd:serenity-screenplay:${SerenityCoreVersion}"
     implementation "net.serenity-bdd:serenity-screenplay-rest:${SerenityCoreVersion}"
     implementation 'org.apache.commons:commons-lang3:3.12.0'
