@@ -1,3 +1,11 @@
+repositories {
+    mavenCentral()
+}
+
+ext {
+    SerenityCoreVersion = "2.1.8"
+}
+
 buildscript {
     ext {
         SerenityCoreVersion = "2.1.8"
@@ -10,24 +18,20 @@ buildscript {
 plugins {
     id 'java'
 }
+
 apply plugin: 'java'
+apply plugin: 'idea'
 apply plugin: 'net.serenity-bdd.aggregator'
 
 group 'co.com.api'
 version '1.0-SNAPSHOT'
 
-repositories {
-    mavenCentral()
-}
-
-ext {
-    SerenityCoreVersion = "2.1.8"
-}
-
 dependencies {
     implementation "net.serenity-bdd:serenity-core:${SerenityCoreVersion}"
     implementation "net.serenity-bdd:serenity-junit:${SerenityCoreVersion}"
     implementation "net.serenity-bdd:serenity-cucumber:1.9.45"
+    
+    implementation "net.serenity-bdd:serenity-screenplay:${SerenityCoreVersion}"
     implementation "net.serenity-bdd:serenity-rest-assured:${SerenityCoreVersion}"
     implementation "net.serenity-bdd:serenity-screenplay-rest:${SerenityCoreVersion}"
     implementation 'org.apache.commons:commons-lang3:3.12.0'
