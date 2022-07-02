@@ -1,0 +1,61 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.4.34")
+    }
+}
+
+plugins {
+    id 'java'
+    id "org.gradle.test-retry" version "1.4.0"
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'
+
+group 'in.reqrest'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    SerenityCoreVersion = "3.0.5"
+}
+
+dependencies {
+    implementation 'junit:junit:4.13.2'
+    implementation "net.serenity-bdd:serenity-core:${SerenityCoreVersion}"
+    implementation "net.serenity-bdd:serenity-junit:${SerenityCoreVersion}"
+    implementation "net.serenity-bdd:serenity-cucumber:${SerenityCoreVersion}"
+    implementation "net.serenity-bdd:serenity-screenplay:${SerenityCoreVersion}"
+    implementation "net.serenity-bdd:serenity-screenplay-rest:${SerenityCoreVersion}"
+
+    implementation "org.slf4j:slf4j-simple:1.7.36"
+    implementation "org.assertj:assertj-core:3.22.0"
+    implementation "org.apache.commons:commons-lang3:3.12.0"
+    compileOnly "org.projectlombok:lombok:1.18.22"
+    annotationProcessor "org.projectlombok:lombok:1.18.22"
+}
+
+compileJava.options.encoding = "UTF-8"
+compileTestJava.options.encoding = "UTF-8"
+
+gradle.startParameter.continueOnFailure = true
+
+tasks.withType(Test) {
+    systemProperties = System.properties as Map<String, ?>
+    maxParallelForks = Runtime.runtime.availableProcessors()
+}
+
+tasks.test{
+    retry {
+        maxRetries.set(2)
+        maxFailures.set(10)
+        failOnPassedAfterRetry.set(true)
+    }
+}

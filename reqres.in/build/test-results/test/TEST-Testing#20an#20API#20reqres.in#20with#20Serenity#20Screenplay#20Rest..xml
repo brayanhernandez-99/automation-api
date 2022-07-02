@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Testing an API reqres.in with Serenity Screenplay Rest." tests="1" skipped="0" failures="1" errors="0" timestamp="2022-04-13T17:59:06" hostname="DESKTOP-QMUOAKJ" time="0.761">
+  <properties/>
+  <testcase name="Test GET Method" classname="Testing an API reqres.in with Serenity Screenplay Rest." time="0.761">
+    <failure message="io.cucumber.junit.UndefinedStepException: The step 'users are consulted' is undefined.&#10;You can implement this step using the snippet(s) below:&#10;&#10;@When(&quot;users are consulted&quot;)&#10;public void usersAreConsulted() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step 'users are consulted' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When(&quot;users are consulted&quot;)
+public void usersAreConsulted() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Test GET Method(testing-an-api-reqres.in-with-serenity-screenplay-rest.;test-get-method)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   ___   _  _   ___    ___   _  _    ___ 
+ |_   _| | __| / __| |_   _|   | _ \ | __| | \| | |   \  |_ _| | \| |  / __|
+   | |   | _|  \__ \   | |     |  _/ | _|  | .` | | |) |  | |  | .` | | (_ |
+   |_|   |___| |___/   |_|     |_|   |___| |_|\_| |___/  |___| |_|\_|  \___|
+
+Test GET Method
+-----------------------------------------------------------------------------
+]]></system-err>
+</testsuite>
