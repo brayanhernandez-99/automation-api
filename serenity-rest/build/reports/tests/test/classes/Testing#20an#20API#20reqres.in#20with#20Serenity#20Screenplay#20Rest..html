@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Testing an API reqres.in with Serenity Screenplay Rest.</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Testing an API reqres.in with Serenity Screenplay Rest.</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/Testing an API reqres.in with Serenity Screenplay Rest.html">Testing an API reqres.in with Serenity Screenplay Rest</a> &gt; Testing an API reqres.in with Serenity Screenplay Rest.</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">9.222s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">GET Method Test</td>
+<td class="success">6.623s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">POST Method Test</td>
+<td class="success">1.752s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Register a new user</td>
+<td class="success">0.847s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>|-- Given that the user wants to make a request
+|---- User connect
+|-- When he makes the request, using the GET method
+|---- User using get method
+|------ user executes a GET on the resource users?page=2
+|-- Then the service return the data
+UsersResponse{page=2, per_page=6, total=12, total_pages=2, data=[Person{id=7, email='michael.lawson@reqres.in', first_name='Michael', last_name='Lawson', avatar='https://reqres.in/img/faces/7-image.jpg'}, Person{id=8, email='lindsay.ferguson@reqres.in', first_name='Lindsay', last_name='Ferguson', avatar='https://reqres.in/img/faces/8-image.jpg'}, Person{id=9, email='tobias.funke@reqres.in', first_name='Tobias', last_name='Funke', avatar='https://reqres.in/img/faces/9-image.jpg'}, Person{id=10, email='byron.fields@reqres.in', first_name='Byron', last_name='Fields', avatar='https://reqres.in/img/faces/10-image.jpg'}, Person{id=11, email='george.edwards@reqres.in', first_name='George', last_name='Edwards', avatar='https://reqres.in/img/faces/11-image.jpg'}, Person{id=12, email='rachel.howell@reqres.in', first_name='Rachel', last_name='Howell', avatar='https://reqres.in/img/faces/12-image.jpg'}], support=Support{url='https://reqres.in/#support-heading', text='To keep ReqRes free, contributions towards server costs are appreciated!'}}
+|---- Then Status code should be (200)
+|---- Then Total Registers should be (12)
+|---- Then Support URL should be a string containing 'reqres.in'
+|---- Then First name should be 'Byron'
+|---- Then total per pag should be (6)
+|---- All users on page 2 should be returned
+|---- status code
+|---- User details should be correct
+|-- Given that the user wants to make a request
+|---- User connect
+|-- When he wants to register a new user, using the POST method1
+|---- User using post method2
+|------ user executes a POST on the resource register
+|-- Then the user is registered correctly
+|---- A valid response is returned
+|-- Given that the user wants to make a request
+|---- User connect
+|-- When he makes the request, using the POST method2
+|---- User using post method3
+|------ user executes a POST on the resource register
+|---- User using post method3
+|------ user executes a POST on the resource users
+|---- User using post method3
+|------ user executes a POST on the resource login
+|-- Then a valid response is returned
+|---- Then Status code should be (400)
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+GET Method Test(testing-an-api-reqres.in-with-serenity-screenplay-rest.;get-method-test)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+GET Method Test
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Register a new user(testing-an-api-reqres.in-with-serenity-screenplay-rest.;register-a-new-user)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Register a new user
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+POST Method Test(testing-an-api-reqres.in-with-serenity-screenplay-rest.;post-method-test)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+POST Method Test
+----------------------------------------------------------------------
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4.2</a> at 13/04/2022, 11:58:14 a. m.</p>
+</div>
+</div>
+</body>
+</html>

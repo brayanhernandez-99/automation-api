@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Testing an API reqres.in with Serenity Screenplay Rest." skipped="0" tests="3" time="8.7" timestamp="2022-04-13 11:58:04"><testcase name="GET Method Test"/><testcase name="Register a new user"/><testcase name="POST Method Test"/></testsuite>

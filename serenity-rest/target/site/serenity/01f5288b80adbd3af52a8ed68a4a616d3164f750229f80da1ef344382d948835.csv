@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Testing an API reqres.in with Serenity Screenplay Rest.","GET Method Test","SUCCESS","2022-04-13T11:35:36.6038869-05:00[America/Bogota]","0.0","6.62"
+"Testing an API reqres.in with Serenity Screenplay Rest.","Register a new user","SUCCESS","2022-04-13T11:35:43.2626391-05:00[America/Bogota]","0.0","0.71"
+"Testing an API reqres.in with Serenity Screenplay Rest.","POST Method Test","SUCCESS","2022-04-13T11:35:44.0033626-05:00[America/Bogota]","0.0","1.7"
